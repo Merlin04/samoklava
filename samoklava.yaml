@@ -81,12 +81,6 @@ points:
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: P15
-        far:
-          spread: kx
-          rotate: -15
-          origin: [-0.5 kx, -0.5 ky]
-          key:
-            column_net: P14
       rows:
         thumb:
           row_net: P7
@@ -103,9 +97,9 @@ outlines:
         points:
           - ref: matrix_inner_bottom
             shift: [0.5 kx + 0.5px, -0.5 ky + 0.5 py]
-          - ref: thumbfan_far_thumb
+          - ref: thumbfan_home_thumb
             shift: [0.5 kx - 0.5px, 0.5 ky + 0.5 py]
-          - ref: thumbfan_far_thumb
+          - ref: thumbfan_home_thumb
             shift: [0.5 kx - 0.5px, -0.5 ky - 0.5 py]
           - ref: thumbfan_near_thumb
             shift: [-0.5 kx + 0.5 px, -0.5 ky - 0.5 py]
@@ -205,7 +199,7 @@ outlines:
       thumb:
         type: circle
         anchor:
-          - ref: thumbfan_far_thumb
+          - ref: thumbfan_home_thumb
             shift: [-0.55 kx, 0]
         radius: 1.05
     mounting_holes:
